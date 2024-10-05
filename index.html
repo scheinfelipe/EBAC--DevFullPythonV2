@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>ToDo List</title>
+  </head>
+  <body class="flex">
+    <div
+      class="border-2 mx-auto mt-16 rounded-xl border-gray-900 min-h-96 w-96"
+    >
+      <header class="w-full inline-flex justify-center mt-4 gap-x-2">
+        <h1 class="text-xl font-bold">ToDo List</h1>
+        <svg
+          class="size-8"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"
+          />
+          <path d="M2 6h4" />
+          <path d="M2 10h4" />
+          <path d="M2 14h4" />
+          <path d="M2 18h4" />
+          <path
+            d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+          />
+        </svg>
+      </header>
+      <main class="mt-4">
+        <form
+          class="flex place-items-center gap-x-2 justify-center"
+          id="to-do-form"
+        >
+          <input
+            id="to-do-input"
+            class="bg-gray-200 py-1 px-2 rounded-xl"
+            type="text"
+            placeholder="Adicione sua tarefa"
+          />
+          <button type="submit" class="rounded-full bg-green-600 p-2">
+            <svg
+              class="size-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8" />
+              <path d="M12 8v8" />
+            </svg>
+          </button>
+        </form>
+        <ul class="w-[80%] my-4 mx-auto list-disc" id="to-dos"></ul>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
